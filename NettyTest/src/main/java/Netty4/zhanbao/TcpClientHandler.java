@@ -24,7 +24,6 @@ public class TcpClientHandler extends ChannelInboundHandlerAdapter {
 
     private int    counter;
     private byte[] req;
-    
 
     public TcpClientHandler() {
         req = ("QUERY TIME ORDER" + System.getProperty("line.separator")).getBytes();
