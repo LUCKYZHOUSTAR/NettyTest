@@ -13,14 +13,24 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package Netty4.MQSource;
-
-import Netty4.MQSource.exception.RemotingCommandException;
+package Netty4.MQSource.exception;
 
 /**
+ * 通信层异常父类
+ * 
  * @author shijia.wxr<vintage.wang@gmail.com>
  * @since 2013-7-13
  */
-public interface CommandCustomHeader {
-    void checkFields() throws RemotingCommandException;
+public class RemotingException extends Exception {
+    private static final long serialVersionUID = -5690687334570505110L;
+
+
+    public RemotingException(String message) {
+        super(message);
+    }
+
+
+    public RemotingException(String message, Throwable cause) {
+        super(message, cause);
+    }
 }

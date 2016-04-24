@@ -13,14 +13,24 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package Netty4.MQSource;
-
-import Netty4.MQSource.exception.RemotingCommandException;
+package Netty4.MQSource.exception;
 
 /**
+ * 命令解析自定义字段时，校验字段有效性抛出异常
+ * 
  * @author shijia.wxr<vintage.wang@gmail.com>
  * @since 2013-7-13
  */
-public interface CommandCustomHeader {
-    void checkFields() throws RemotingCommandException;
+public class RemotingCommandException extends RemotingException {
+    private static final long serialVersionUID = -6061365915274953096L;
+
+
+    public RemotingCommandException(String message) {
+        super(message, null);
+    }
+
+
+    public RemotingCommandException(String message, Throwable cause) {
+        super(message, cause);
+    }
 }

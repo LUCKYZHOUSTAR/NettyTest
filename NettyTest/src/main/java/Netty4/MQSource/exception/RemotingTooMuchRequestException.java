@@ -13,14 +13,19 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package Netty4.MQSource;
-
-import Netty4.MQSource.exception.RemotingCommandException;
+package Netty4.MQSource.exception;
 
 /**
+ * 异步调用或者Oneway调用，堆积的请求超过信号量最大值
+ * 
  * @author shijia.wxr<vintage.wang@gmail.com>
  * @since 2013-7-13
  */
-public interface CommandCustomHeader {
-    void checkFields() throws RemotingCommandException;
+public class RemotingTooMuchRequestException extends RemotingException {
+    private static final long serialVersionUID = 4326919581254519654L;
+
+
+    public RemotingTooMuchRequestException(String message) {
+        super(message);
+    }
 }

@@ -13,14 +13,24 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package Netty4.MQSource;
-
-import Netty4.MQSource.exception.RemotingCommandException;
+package Netty4.MQSource.exception;
 
 /**
+ * RPC调用中，客户端发送请求失败，抛出此异常
+ * 
  * @author shijia.wxr<vintage.wang@gmail.com>
  * @since 2013-7-13
  */
-public interface CommandCustomHeader {
-    void checkFields() throws RemotingCommandException;
+public class RemotingSendRequestException extends RemotingException {
+    private static final long serialVersionUID = 5391285827332471674L;
+
+
+    public RemotingSendRequestException(String addr) {
+        this(addr, null);
+    }
+
+
+    public RemotingSendRequestException(String addr, Throwable cause) {
+        super("send request to <" + addr + "> failed", cause);
+    }
 }
