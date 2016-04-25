@@ -12,6 +12,7 @@ import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelInitializer;
+import io.netty.channel.ChannelOption;
 import io.netty.channel.ChannelPipeline;
 import io.netty.channel.EventLoopGroup;
 import io.netty.channel.nio.NioEventLoopGroup;
@@ -55,7 +56,8 @@ public class TcpServer {
         EventLoopGroup workerGroup = new NioEventLoopGroup(BIZTHREADSIZE);
         try {
             b.group(bossGroup, workerGroup);
-            b.channel(NioServerSocketChannel.class);
+            b.channel(NioServerSocketChannel.class)
+            .option(ChannelOption.TCP_NODELAY, true);
             b.childHandler(new ChannelInitializer<Channel>() {
 
                 @Override

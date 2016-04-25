@@ -1,34 +1,160 @@
-DEBUG [2016/04/21 15:16:13,521] main InternalLoggerFactory.debug(line:71): Using SLF4J as the default logging framework
-DEBUG [2016/04/21 15:16:13,546] main PlatformDependent0.debug(line:76): java.nio.Buffer.address: available
-DEBUG [2016/04/21 15:16:13,548] main PlatformDependent0.debug(line:76): sun.misc.Unsafe.theUnsafe: available
-DEBUG [2016/04/21 15:16:13,550] main PlatformDependent0.debug(line:71): sun.misc.Unsafe.copyMemory: available
-DEBUG [2016/04/21 15:16:13,551] main PlatformDependent0.debug(line:76): java.nio.Bits.unaligned: true
-DEBUG [2016/04/21 15:16:13,552] main PlatformDependent.debug(line:71): Platform: Windows
-DEBUG [2016/04/21 15:16:13,553] main PlatformDependent.debug(line:76): Java version: 7
-DEBUG [2016/04/21 15:16:13,553] main PlatformDependent.debug(line:76): -Dio.netty.noUnsafe: false
-DEBUG [2016/04/21 15:16:13,554] main PlatformDependent.debug(line:76): sun.misc.Unsafe: available
-DEBUG [2016/04/21 15:16:13,555] main PlatformDependent.debug(line:76): -Dio.netty.noJavassist: false
-DEBUG [2016/04/21 15:16:13,676] main PlatformDependent.debug(line:71): Javassist: available
-DEBUG [2016/04/21 15:16:13,677] main PlatformDependent.debug(line:76): -Dio.netty.tmpdir: C:\Users\LUCKY\AppData\Local\Temp (java.io.tmpdir)
-DEBUG [2016/04/21 15:16:13,678] main PlatformDependent.debug(line:76): -Dio.netty.bitMode: 32 (sun.arch.data.model)
-DEBUG [2016/04/21 15:16:13,678] main PlatformDependent.debug(line:76): -Dio.netty.noPreferDirect: false
-DEBUG [2016/04/21 15:16:13,727] main DefaultChannelId.debug(line:76): -Dio.netty.processId: 6704 (auto-detected)
-DEBUG [2016/04/21 15:16:13,847] main NetUtil.debug(line:86): Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
-DEBUG [2016/04/21 15:16:13,849] main NetUtil.debug(line:81): \proc\sys\net\core\somaxconn: 200 (non-existent)
-DEBUG [2016/04/21 15:16:13,971] main DefaultChannelId.debug(line:76): -Dio.netty.machineId: 00:00:00:00:00:00:00:e0 (auto-detected)
-DEBUG [2016/04/21 15:16:13,974] main ThreadLocalRandom.debug(line:71): -Dio.netty.initialSeedUniquifier: 0x67c7286c256e9c5b (took 17 ms)
-DEBUG [2016/04/21 15:16:13,988] main ResourceLeakDetector.debug(line:81): -Dio.netty.leakDetection.level: simple
-DEBUG [2016/04/21 15:16:13,988] main ResourceLeakDetector.debug(line:81): -Dio.netty.leakDetection.maxRecords: 4
-DEBUG [2016/04/21 15:16:14,014] main PooledByteBufAllocator.debug(line:76): -Dio.netty.allocator.numHeapArenas: 2
-DEBUG [2016/04/21 15:16:14,014] main PooledByteBufAllocator.debug(line:76): -Dio.netty.allocator.numDirectArenas: 2
-DEBUG [2016/04/21 15:16:14,015] main PooledByteBufAllocator.debug(line:76): -Dio.netty.allocator.pageSize: 8192
-DEBUG [2016/04/21 15:16:14,015] main PooledByteBufAllocator.debug(line:76): -Dio.netty.allocator.maxOrder: 11
-DEBUG [2016/04/21 15:16:14,015] main PooledByteBufAllocator.debug(line:76): -Dio.netty.allocator.chunkSize: 16777216
-DEBUG [2016/04/21 15:16:14,015] main PooledByteBufAllocator.debug(line:76): -Dio.netty.allocator.tinyCacheSize: 512
-DEBUG [2016/04/21 15:16:14,015] main PooledByteBufAllocator.debug(line:76): -Dio.netty.allocator.smallCacheSize: 256
-DEBUG [2016/04/21 15:16:14,015] main PooledByteBufAllocator.debug(line:76): -Dio.netty.allocator.normalCacheSize: 64
-DEBUG [2016/04/21 15:16:14,016] main PooledByteBufAllocator.debug(line:76): -Dio.netty.allocator.maxCachedBufferCapacity: 32768
-DEBUG [2016/04/21 15:16:14,016] main PooledByteBufAllocator.debug(line:76): -Dio.netty.allocator.cacheTrimInterval: 8192
-DEBUG [2016/04/21 15:16:14,026] main ByteBufUtil.debug(line:76): -Dio.netty.allocator.type: pooled
-DEBUG [2016/04/21 15:16:14,027] main ByteBufUtil.debug(line:76): -Dio.netty.threadLocalDirectBufferSize: 65536
-DEBUG [2016/04/21 15:16:14,027] main ByteBufUtil.debug(line:76): -Dio.netty.maxThreadLocalCharBufferSize: 16384
+DEBUG [2016/04/25 10:51:33,520] main InternalLoggerFactory.debug(line:71): Using SLF4J as the default logging framework
+DEBUG [2016/04/25 10:51:33,557] main MultithreadEventLoopGroup.debug(line:76): -Dio.netty.eventLoopThreads: 8
+DEBUG [2016/04/25 10:51:33,619] main PlatformDependent0.debug(line:76): java.nio.Buffer.address: available
+DEBUG [2016/04/25 10:51:33,621] main PlatformDependent0.debug(line:76): sun.misc.Unsafe.theUnsafe: available
+DEBUG [2016/04/25 10:51:33,621] main PlatformDependent0.debug(line:71): sun.misc.Unsafe.copyMemory: available
+DEBUG [2016/04/25 10:51:33,622] main PlatformDependent0.debug(line:76): java.nio.Bits.unaligned: true
+DEBUG [2016/04/25 10:51:33,623] main PlatformDependent.debug(line:71): Platform: Windows
+DEBUG [2016/04/25 10:51:33,624] main PlatformDependent.debug(line:76): Java version: 7
+DEBUG [2016/04/25 10:51:33,624] main PlatformDependent.debug(line:76): -Dio.netty.noUnsafe: false
+DEBUG [2016/04/25 10:51:33,625] main PlatformDependent.debug(line:76): sun.misc.Unsafe: available
+DEBUG [2016/04/25 10:51:33,625] main PlatformDependent.debug(line:76): -Dio.netty.noJavassist: false
+DEBUG [2016/04/25 10:51:33,764] main PlatformDependent.debug(line:71): Javassist: available
+DEBUG [2016/04/25 10:51:33,765] main PlatformDependent.debug(line:76): -Dio.netty.tmpdir: C:\Users\LUCKY\AppData\Local\Temp (java.io.tmpdir)
+DEBUG [2016/04/25 10:51:33,765] main PlatformDependent.debug(line:76): -Dio.netty.bitMode: 32 (sun.arch.data.model)
+DEBUG [2016/04/25 10:51:33,765] main PlatformDependent.debug(line:76): -Dio.netty.noPreferDirect: false
+DEBUG [2016/04/25 10:51:33,766] main NioEventLoop.debug(line:76): -Dio.netty.noKeySetOptimization: false
+DEBUG [2016/04/25 10:51:33,768] main NioEventLoop.debug(line:76): -Dio.netty.selectorAutoRebuildThreshold: 512
+DEBUG [2016/04/25 10:51:33,851] main DefaultChannelId.debug(line:76): -Dio.netty.processId: 5844 (auto-detected)
+DEBUG [2016/04/25 10:51:33,970] main NetUtil.debug(line:86): Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+DEBUG [2016/04/25 10:51:33,971] main NetUtil.debug(line:81): \proc\sys\net\core\somaxconn: 200 (non-existent)
+DEBUG [2016/04/25 10:51:34,100] main DefaultChannelId.debug(line:76): -Dio.netty.machineId: 00:00:00:00:00:00:00:e0 (auto-detected)
+DEBUG [2016/04/25 10:51:34,103] main ThreadLocalRandom.debug(line:71): -Dio.netty.initialSeedUniquifier: 0x100718f587d4c796 (took 36 ms)
+DEBUG [2016/04/25 10:51:34,116] main ResourceLeakDetector.debug(line:81): -Dio.netty.leakDetection.level: simple
+DEBUG [2016/04/25 10:51:34,117] main ResourceLeakDetector.debug(line:81): -Dio.netty.leakDetection.maxRecords: 4
+DEBUG [2016/04/25 10:51:34,143] main PooledByteBufAllocator.debug(line:76): -Dio.netty.allocator.numHeapArenas: 2
+DEBUG [2016/04/25 10:51:34,144] main PooledByteBufAllocator.debug(line:76): -Dio.netty.allocator.numDirectArenas: 2
+DEBUG [2016/04/25 10:51:34,144] main PooledByteBufAllocator.debug(line:76): -Dio.netty.allocator.pageSize: 8192
+DEBUG [2016/04/25 10:51:34,144] main PooledByteBufAllocator.debug(line:76): -Dio.netty.allocator.maxOrder: 11
+DEBUG [2016/04/25 10:51:34,145] main PooledByteBufAllocator.debug(line:76): -Dio.netty.allocator.chunkSize: 16777216
+DEBUG [2016/04/25 10:51:34,145] main PooledByteBufAllocator.debug(line:76): -Dio.netty.allocator.tinyCacheSize: 512
+DEBUG [2016/04/25 10:51:34,145] main PooledByteBufAllocator.debug(line:76): -Dio.netty.allocator.smallCacheSize: 256
+DEBUG [2016/04/25 10:51:34,145] main PooledByteBufAllocator.debug(line:76): -Dio.netty.allocator.normalCacheSize: 64
+DEBUG [2016/04/25 10:51:34,146] main PooledByteBufAllocator.debug(line:76): -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+DEBUG [2016/04/25 10:51:34,146] main PooledByteBufAllocator.debug(line:76): -Dio.netty.allocator.cacheTrimInterval: 8192
+DEBUG [2016/04/25 10:51:34,160] main ByteBufUtil.debug(line:76): -Dio.netty.allocator.type: pooled
+DEBUG [2016/04/25 10:51:34,161] main ByteBufUtil.debug(line:76): -Dio.netty.threadLocalDirectBufferSize: 65536
+DEBUG [2016/04/25 10:51:34,161] main ByteBufUtil.debug(line:76): -Dio.netty.maxThreadLocalCharBufferSize: 16384
+DEBUG [2016/04/25 10:51:41,328] main InternalLoggerFactory.debug(line:71): Using SLF4J as the default logging framework
+DEBUG [2016/04/25 10:51:41,340] main MultithreadEventLoopGroup.debug(line:76): -Dio.netty.eventLoopThreads: 8
+DEBUG [2016/04/25 10:51:41,405] main PlatformDependent0.debug(line:76): java.nio.Buffer.address: available
+DEBUG [2016/04/25 10:51:41,413] main PlatformDependent0.debug(line:76): sun.misc.Unsafe.theUnsafe: available
+DEBUG [2016/04/25 10:51:41,413] main PlatformDependent0.debug(line:71): sun.misc.Unsafe.copyMemory: available
+DEBUG [2016/04/25 10:51:41,414] main PlatformDependent0.debug(line:76): java.nio.Bits.unaligned: true
+DEBUG [2016/04/25 10:51:41,419] main PlatformDependent.debug(line:71): Platform: Windows
+DEBUG [2016/04/25 10:51:41,420] main PlatformDependent.debug(line:76): Java version: 7
+DEBUG [2016/04/25 10:51:41,420] main PlatformDependent.debug(line:76): -Dio.netty.noUnsafe: false
+DEBUG [2016/04/25 10:51:41,421] main PlatformDependent.debug(line:76): sun.misc.Unsafe: available
+DEBUG [2016/04/25 10:51:41,426] main PlatformDependent.debug(line:76): -Dio.netty.noJavassist: false
+DEBUG [2016/04/25 10:51:41,536] main PlatformDependent.debug(line:71): Javassist: available
+DEBUG [2016/04/25 10:51:41,537] main PlatformDependent.debug(line:76): -Dio.netty.tmpdir: C:\Users\LUCKY\AppData\Local\Temp (java.io.tmpdir)
+DEBUG [2016/04/25 10:51:41,537] main PlatformDependent.debug(line:76): -Dio.netty.bitMode: 32 (sun.arch.data.model)
+DEBUG [2016/04/25 10:51:41,537] main PlatformDependent.debug(line:76): -Dio.netty.noPreferDirect: false
+DEBUG [2016/04/25 10:51:41,538] main NioEventLoop.debug(line:76): -Dio.netty.noKeySetOptimization: false
+DEBUG [2016/04/25 10:51:41,539] main NioEventLoop.debug(line:76): -Dio.netty.selectorAutoRebuildThreshold: 512
+DEBUG [2016/04/25 10:51:41,626] main DefaultChannelId.debug(line:76): -Dio.netty.processId: 2580 (auto-detected)
+DEBUG [2016/04/25 10:51:41,743] main NetUtil.debug(line:86): Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+DEBUG [2016/04/25 10:51:41,759] main NetUtil.debug(line:81): \proc\sys\net\core\somaxconn: 200 (non-existent)
+DEBUG [2016/04/25 10:51:41,887] main DefaultChannelId.debug(line:76): -Dio.netty.machineId: 00:00:00:00:00:00:00:e0 (auto-detected)
+DEBUG [2016/04/25 10:51:41,889] main ThreadLocalRandom.debug(line:71): -Dio.netty.initialSeedUniquifier: 0xc6642fdae8b99c2d (took 26 ms)
+DEBUG [2016/04/25 10:51:41,908] main ResourceLeakDetector.debug(line:81): -Dio.netty.leakDetection.level: simple
+DEBUG [2016/04/25 10:51:41,909] main ResourceLeakDetector.debug(line:81): -Dio.netty.leakDetection.maxRecords: 4
+DEBUG [2016/04/25 10:51:41,929] main PooledByteBufAllocator.debug(line:76): -Dio.netty.allocator.numHeapArenas: 2
+DEBUG [2016/04/25 10:51:41,930] main PooledByteBufAllocator.debug(line:76): -Dio.netty.allocator.numDirectArenas: 2
+DEBUG [2016/04/25 10:51:41,930] main PooledByteBufAllocator.debug(line:76): -Dio.netty.allocator.pageSize: 8192
+DEBUG [2016/04/25 10:51:41,930] main PooledByteBufAllocator.debug(line:76): -Dio.netty.allocator.maxOrder: 11
+DEBUG [2016/04/25 10:51:41,930] main PooledByteBufAllocator.debug(line:76): -Dio.netty.allocator.chunkSize: 16777216
+DEBUG [2016/04/25 10:51:41,930] main PooledByteBufAllocator.debug(line:76): -Dio.netty.allocator.tinyCacheSize: 512
+DEBUG [2016/04/25 10:51:41,930] main PooledByteBufAllocator.debug(line:76): -Dio.netty.allocator.smallCacheSize: 256
+DEBUG [2016/04/25 10:51:41,931] main PooledByteBufAllocator.debug(line:76): -Dio.netty.allocator.normalCacheSize: 64
+DEBUG [2016/04/25 10:51:41,931] main PooledByteBufAllocator.debug(line:76): -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+DEBUG [2016/04/25 10:51:41,931] main PooledByteBufAllocator.debug(line:76): -Dio.netty.allocator.cacheTrimInterval: 8192
+DEBUG [2016/04/25 10:51:41,948] main ByteBufUtil.debug(line:76): -Dio.netty.allocator.type: pooled
+DEBUG [2016/04/25 10:51:41,948] main ByteBufUtil.debug(line:76): -Dio.netty.threadLocalDirectBufferSize: 65536
+DEBUG [2016/04/25 10:51:41,949] main ByteBufUtil.debug(line:76): -Dio.netty.maxThreadLocalCharBufferSize: 16384
+DEBUG [2016/04/25 10:51:41,968] main JavassistTypeParameterMatcherGenerator.debug(line:76): Generated: io.netty.util.internal.__matchers__.java.net.InetSocketAddressMatcher
+DEBUG [2016/04/25 10:51:41,993] nioEventLoopGroup-2-1 AbstractByteBuf.debug(line:81): -Dio.netty.buffer.bytebuf.checkAccessible: true
+DEBUG [2016/04/25 10:51:42,012] nioEventLoopGroup-2-1 Recycler.debug(line:76): -Dio.netty.recycler.maxCapacity.maxCapacity: 262144
+DEBUG [2016/04/25 10:51:42,060] nioEventLoopGroup-3-1 Recycler.debug(line:76): -Dio.netty.recycler.maxCapacity.maxCapacity: 262144
+DEBUG [2016/04/25 10:51:42,073] nioEventLoopGroup-3-1 AbstractByteBuf.debug(line:81): -Dio.netty.buffer.bytebuf.checkAccessible: true
+DEBUG [2016/04/25 10:51:44,321] nioEventLoopGroup-2-1 PoolThreadCache.debug(line:81): Freed 2 thread-local buffer(s) from thread: nioEventLoopGroup-2-1
+DEBUG [2016/04/25 10:52:32,309] main InternalLoggerFactory.debug(line:71): Using SLF4J as the default logging framework
+DEBUG [2016/04/25 10:52:32,335] main MultithreadEventLoopGroup.debug(line:76): -Dio.netty.eventLoopThreads: 8
+DEBUG [2016/04/25 10:52:32,377] main PlatformDependent0.debug(line:76): java.nio.Buffer.address: available
+DEBUG [2016/04/25 10:52:32,379] main PlatformDependent0.debug(line:76): sun.misc.Unsafe.theUnsafe: available
+DEBUG [2016/04/25 10:52:32,379] main PlatformDependent0.debug(line:71): sun.misc.Unsafe.copyMemory: available
+DEBUG [2016/04/25 10:52:32,380] main PlatformDependent0.debug(line:76): java.nio.Bits.unaligned: true
+DEBUG [2016/04/25 10:52:32,381] main PlatformDependent.debug(line:71): Platform: Windows
+DEBUG [2016/04/25 10:52:32,381] main PlatformDependent.debug(line:76): Java version: 7
+DEBUG [2016/04/25 10:52:32,381] main PlatformDependent.debug(line:76): -Dio.netty.noUnsafe: false
+DEBUG [2016/04/25 10:52:32,381] main PlatformDependent.debug(line:76): sun.misc.Unsafe: available
+DEBUG [2016/04/25 10:52:32,382] main PlatformDependent.debug(line:76): -Dio.netty.noJavassist: false
+DEBUG [2016/04/25 10:52:32,485] main PlatformDependent.debug(line:71): Javassist: available
+DEBUG [2016/04/25 10:52:32,485] main PlatformDependent.debug(line:76): -Dio.netty.tmpdir: C:\Users\LUCKY\AppData\Local\Temp (java.io.tmpdir)
+DEBUG [2016/04/25 10:52:32,485] main PlatformDependent.debug(line:76): -Dio.netty.bitMode: 32 (sun.arch.data.model)
+DEBUG [2016/04/25 10:52:32,485] main PlatformDependent.debug(line:76): -Dio.netty.noPreferDirect: false
+DEBUG [2016/04/25 10:52:32,486] main NioEventLoop.debug(line:76): -Dio.netty.noKeySetOptimization: false
+DEBUG [2016/04/25 10:52:32,488] main NioEventLoop.debug(line:76): -Dio.netty.selectorAutoRebuildThreshold: 512
+DEBUG [2016/04/25 10:52:32,534] main DefaultChannelId.debug(line:76): -Dio.netty.processId: 2628 (auto-detected)
+DEBUG [2016/04/25 10:52:32,657] main NetUtil.debug(line:86): Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+DEBUG [2016/04/25 10:52:32,658] main NetUtil.debug(line:81): \proc\sys\net\core\somaxconn: 200 (non-existent)
+DEBUG [2016/04/25 10:52:32,789] main DefaultChannelId.debug(line:76): -Dio.netty.machineId: 00:00:00:00:00:00:00:e0 (auto-detected)
+DEBUG [2016/04/25 10:52:32,791] main ThreadLocalRandom.debug(line:71): -Dio.netty.initialSeedUniquifier: 0x525d1fbdac2d0f80 (took 25 ms)
+DEBUG [2016/04/25 10:52:32,802] main ResourceLeakDetector.debug(line:81): -Dio.netty.leakDetection.level: simple
+DEBUG [2016/04/25 10:52:32,802] main ResourceLeakDetector.debug(line:81): -Dio.netty.leakDetection.maxRecords: 4
+DEBUG [2016/04/25 10:52:32,827] main PooledByteBufAllocator.debug(line:76): -Dio.netty.allocator.numHeapArenas: 2
+DEBUG [2016/04/25 10:52:32,828] main PooledByteBufAllocator.debug(line:76): -Dio.netty.allocator.numDirectArenas: 2
+DEBUG [2016/04/25 10:52:32,828] main PooledByteBufAllocator.debug(line:76): -Dio.netty.allocator.pageSize: 8192
+DEBUG [2016/04/25 10:52:32,828] main PooledByteBufAllocator.debug(line:76): -Dio.netty.allocator.maxOrder: 11
+DEBUG [2016/04/25 10:52:32,828] main PooledByteBufAllocator.debug(line:76): -Dio.netty.allocator.chunkSize: 16777216
+DEBUG [2016/04/25 10:52:32,828] main PooledByteBufAllocator.debug(line:76): -Dio.netty.allocator.tinyCacheSize: 512
+DEBUG [2016/04/25 10:52:32,829] main PooledByteBufAllocator.debug(line:76): -Dio.netty.allocator.smallCacheSize: 256
+DEBUG [2016/04/25 10:52:32,829] main PooledByteBufAllocator.debug(line:76): -Dio.netty.allocator.normalCacheSize: 64
+DEBUG [2016/04/25 10:52:32,829] main PooledByteBufAllocator.debug(line:76): -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+DEBUG [2016/04/25 10:52:32,829] main PooledByteBufAllocator.debug(line:76): -Dio.netty.allocator.cacheTrimInterval: 8192
+DEBUG [2016/04/25 10:52:32,843] main ByteBufUtil.debug(line:76): -Dio.netty.allocator.type: pooled
+DEBUG [2016/04/25 10:52:32,843] main ByteBufUtil.debug(line:76): -Dio.netty.threadLocalDirectBufferSize: 65536
+DEBUG [2016/04/25 10:52:32,843] main ByteBufUtil.debug(line:76): -Dio.netty.maxThreadLocalCharBufferSize: 16384
+DEBUG [2016/04/25 10:52:45,269] main InternalLoggerFactory.debug(line:71): Using SLF4J as the default logging framework
+DEBUG [2016/04/25 10:52:45,280] main MultithreadEventLoopGroup.debug(line:76): -Dio.netty.eventLoopThreads: 8
+DEBUG [2016/04/25 10:52:45,325] main PlatformDependent0.debug(line:76): java.nio.Buffer.address: available
+DEBUG [2016/04/25 10:52:45,326] main PlatformDependent0.debug(line:76): sun.misc.Unsafe.theUnsafe: available
+DEBUG [2016/04/25 10:52:45,327] main PlatformDependent0.debug(line:71): sun.misc.Unsafe.copyMemory: available
+DEBUG [2016/04/25 10:52:45,327] main PlatformDependent0.debug(line:76): java.nio.Bits.unaligned: true
+DEBUG [2016/04/25 10:52:45,328] main PlatformDependent.debug(line:71): Platform: Windows
+DEBUG [2016/04/25 10:52:45,329] main PlatformDependent.debug(line:76): Java version: 7
+DEBUG [2016/04/25 10:52:45,329] main PlatformDependent.debug(line:76): -Dio.netty.noUnsafe: false
+DEBUG [2016/04/25 10:52:45,329] main PlatformDependent.debug(line:76): sun.misc.Unsafe: available
+DEBUG [2016/04/25 10:52:45,330] main PlatformDependent.debug(line:76): -Dio.netty.noJavassist: false
+DEBUG [2016/04/25 10:52:45,431] main PlatformDependent.debug(line:71): Javassist: available
+DEBUG [2016/04/25 10:52:45,431] main PlatformDependent.debug(line:76): -Dio.netty.tmpdir: C:\Users\LUCKY\AppData\Local\Temp (java.io.tmpdir)
+DEBUG [2016/04/25 10:52:45,432] main PlatformDependent.debug(line:76): -Dio.netty.bitMode: 32 (sun.arch.data.model)
+DEBUG [2016/04/25 10:52:45,432] main PlatformDependent.debug(line:76): -Dio.netty.noPreferDirect: false
+DEBUG [2016/04/25 10:52:45,432] main NioEventLoop.debug(line:76): -Dio.netty.noKeySetOptimization: false
+DEBUG [2016/04/25 10:52:45,434] main NioEventLoop.debug(line:76): -Dio.netty.selectorAutoRebuildThreshold: 512
+DEBUG [2016/04/25 10:52:45,479] main DefaultChannelId.debug(line:76): -Dio.netty.processId: 7264 (auto-detected)
+DEBUG [2016/04/25 10:52:45,602] main NetUtil.debug(line:86): Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+DEBUG [2016/04/25 10:52:45,603] main NetUtil.debug(line:81): \proc\sys\net\core\somaxconn: 200 (non-existent)
+DEBUG [2016/04/25 10:52:45,726] main DefaultChannelId.debug(line:76): -Dio.netty.machineId: 00:00:00:00:00:00:00:e0 (auto-detected)
+DEBUG [2016/04/25 10:52:45,727] main ThreadLocalRandom.debug(line:71): -Dio.netty.initialSeedUniquifier: 0xff5f9817fc380e66 (took 24 ms)
+DEBUG [2016/04/25 10:52:45,739] main ResourceLeakDetector.debug(line:81): -Dio.netty.leakDetection.level: simple
+DEBUG [2016/04/25 10:52:45,739] main ResourceLeakDetector.debug(line:81): -Dio.netty.leakDetection.maxRecords: 4
+DEBUG [2016/04/25 10:52:45,758] main PooledByteBufAllocator.debug(line:76): -Dio.netty.allocator.numHeapArenas: 2
+DEBUG [2016/04/25 10:52:45,758] main PooledByteBufAllocator.debug(line:76): -Dio.netty.allocator.numDirectArenas: 2
+DEBUG [2016/04/25 10:52:45,758] main PooledByteBufAllocator.debug(line:76): -Dio.netty.allocator.pageSize: 8192
+DEBUG [2016/04/25 10:52:45,758] main PooledByteBufAllocator.debug(line:76): -Dio.netty.allocator.maxOrder: 11
+DEBUG [2016/04/25 10:52:45,758] main PooledByteBufAllocator.debug(line:76): -Dio.netty.allocator.chunkSize: 16777216
+DEBUG [2016/04/25 10:52:45,759] main PooledByteBufAllocator.debug(line:76): -Dio.netty.allocator.tinyCacheSize: 512
+DEBUG [2016/04/25 10:52:45,759] main PooledByteBufAllocator.debug(line:76): -Dio.netty.allocator.smallCacheSize: 256
+DEBUG [2016/04/25 10:52:45,759] main PooledByteBufAllocator.debug(line:76): -Dio.netty.allocator.normalCacheSize: 64
+DEBUG [2016/04/25 10:52:45,759] main PooledByteBufAllocator.debug(line:76): -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+DEBUG [2016/04/25 10:52:45,759] main PooledByteBufAllocator.debug(line:76): -Dio.netty.allocator.cacheTrimInterval: 8192
+DEBUG [2016/04/25 10:52:45,773] main ByteBufUtil.debug(line:76): -Dio.netty.allocator.type: pooled
+DEBUG [2016/04/25 10:52:45,773] main ByteBufUtil.debug(line:76): -Dio.netty.threadLocalDirectBufferSize: 65536
+DEBUG [2016/04/25 10:52:45,773] main ByteBufUtil.debug(line:76): -Dio.netty.maxThreadLocalCharBufferSize: 16384
+DEBUG [2016/04/25 10:52:45,790] main JavassistTypeParameterMatcherGenerator.debug(line:76): Generated: io.netty.util.internal.__matchers__.java.net.InetSocketAddressMatcher
+DEBUG [2016/04/25 10:52:45,811] nioEventLoopGroup-2-1 AbstractByteBuf.debug(line:81): -Dio.netty.buffer.bytebuf.checkAccessible: true
+DEBUG [2016/04/25 10:52:45,828] nioEventLoopGroup-2-1 Recycler.debug(line:76): -Dio.netty.recycler.maxCapacity.maxCapacity: 262144
+DEBUG [2016/04/25 10:52:45,865] nioEventLoopGroup-3-1 Recycler.debug(line:76): -Dio.netty.recycler.maxCapacity.maxCapacity: 262144
+DEBUG [2016/04/25 10:52:45,876] nioEventLoopGroup-3-1 AbstractByteBuf.debug(line:81): -Dio.netty.buffer.bytebuf.checkAccessible: true
+DEBUG [2016/04/25 10:52:48,144] nioEventLoopGroup-2-1 PoolThreadCache.debug(line:81): Freed 2 thread-local buffer(s) from thread: nioEventLoopGroup-2-1

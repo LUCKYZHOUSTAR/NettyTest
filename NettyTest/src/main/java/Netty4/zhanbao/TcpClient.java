@@ -59,7 +59,8 @@ public class TcpClient {
             });
 
             //设置tcp的参数信息
-            b.option(ChannelOption.SO_KEEPALIVE, true);
+            b.option(ChannelOption.SO_KEEPALIVE, true)
+            .option(ChannelOption.TCP_NODELAY, true);
             ChannelFuture channelFuture = b.connect(host, port).sync();
             //等待服务端监听端口关闭,会一直阻塞，等待服务端关闭后，才关闭,异步阻塞，等待服务端链路关闭后，才会退出
             channelFuture.channel().closeFuture().sync();
