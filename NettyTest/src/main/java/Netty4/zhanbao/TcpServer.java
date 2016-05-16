@@ -56,8 +56,7 @@ public class TcpServer {
         EventLoopGroup workerGroup = new NioEventLoopGroup(BIZTHREADSIZE);
         try {
             b.group(bossGroup, workerGroup);
-            b.channel(NioServerSocketChannel.class)
-            .option(ChannelOption.TCP_NODELAY, true);
+            b.channel(NioServerSocketChannel.class).option(ChannelOption.TCP_NODELAY, true);
             b.childHandler(new ChannelInitializer<Channel>() {
 
                 @Override
@@ -69,15 +68,15 @@ public class TcpServer {
             });
 
             ChannelFuture channelFuture = b.bind(IP, PORT).sync();
-            Thread.sleep(Integer.MAX_VALUE);
+            //            Thread.sleep(Integer.MAX_VALUE);
 
-            //等待服务端端口关闭
-//            channelFuture.channel().closeFuture().sync();
+            //等待服务端端口关闭，服务端不需要加这句话，同步阻塞住了
+            channelFuture.channel().closeFuture().sync();
             System.out.println("TCP服务器已经启动");
         } catch (Exception e) {
         } finally {
-//            bossGroup.shutdownGracefully();
-//            workerGroup.shutdownGracefully();
+            bossGroup.shutdownGracefully();
+            workerGroup.shutdownGracefully();
         }
     }
 

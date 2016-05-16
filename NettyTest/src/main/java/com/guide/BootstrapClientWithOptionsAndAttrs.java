@@ -15,7 +15,7 @@ import io.netty.util.AttributeKey;
 public class BootstrapClientWithOptionsAndAttrs {
 
 	public void bootstrap() {
-		final AttributeKey<Integer> id = new AttributeKey<Integer>(0, "ID");
+		final AttributeKey<Integer> id = null;
 
 		Bootstrap bootstrap = new Bootstrap();
 		bootstrap.group(new NioEventLoopGroup())

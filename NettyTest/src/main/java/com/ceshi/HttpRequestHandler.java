@@ -1,4 +1,4 @@
-package com.ceshi;
+/*package com.ceshi;
 
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
@@ -50,3 +50,4 @@ public class HttpRequestHandler extends
 	}
 
 }
+*/

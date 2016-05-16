@@ -14,8 +14,7 @@ import java.nio.ByteBuffer;
 import java.util.HashMap;
 import java.util.concurrent.atomic.AtomicInteger;
 
-import com.alibaba.rocketmq.remoting.protocol.RemotingSerializable;
-
+import Netty4.MQSource.Protocl.RemotingSerializable;
 import Netty4.MQSource.Protocl.RemotingSysResponseCode;
 
 /**  
@@ -164,8 +163,7 @@ public class RemotingCommand {
         int length = 4;
         //header data length
         ByteBuffer result = ByteBuffer.allocate(4 + length);
-        //length
-        result.putInt(length);
+        return result.putInt(length);
 
     }
 

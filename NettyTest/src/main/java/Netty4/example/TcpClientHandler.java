@@ -27,7 +27,7 @@ import java.util.concurrent.LinkedBlockingQueue;
 public class TcpClientHandler extends ChannelInboundHandlerAdapter{
 
     
-    private final ByteBuf firstMessage;
+//    private final ByteBuf firstMessage;
     private String msgResult;
     final BlockingQueue<String> answer = new LinkedBlockingQueue<String>();
     
@@ -53,9 +53,9 @@ public class TcpClientHandler extends ChannelInboundHandlerAdapter{
     }
 
     public TcpClientHandler(){
-        byte[] req="QUERY TIME ORDER".getBytes();
-        firstMessage=Unpooled.buffer(req.length);
-        firstMessage.writeBytes(req);
+//        byte[] req="QUERY TIME ORDER".getBytes();
+//        firstMessage=Unpooled.buffer(req.length);
+//        firstMessage.writeBytes(req);
     }
 
     /* (non-Javadoc)   
@@ -65,7 +65,7 @@ public class TcpClientHandler extends ChannelInboundHandlerAdapter{
      */  
     @Override
     public void channelActive(ChannelHandlerContext ctx) throws Exception {
-        ctx.writeAndFlush(firstMessage);
+//        ctx.writeAndFlush(firstMessage);
     }
 
     /* (non-Javadoc)   

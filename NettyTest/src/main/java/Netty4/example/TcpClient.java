@@ -55,7 +55,14 @@ public class TcpClient {
 //            TcpClientHandler tcpClientHandler=(TcpClientHandler) channelFuture.channel().pipeline().last();
 //            System.out.println(tcpClientHandler.getAnswer().take());
             
-            channelFuture.channel().writeAndFlush("测试用例");
+            System.out.println(channelFuture.channel()==null);
+            System.out.println(channelFuture.channel().isActive());
+            if (channelFuture.channel() != null && channelFuture.channel().isActive()) {
+                
+                channelFuture.channel().writeAndFlush("abc");
+            }
+
+//            channelFuture.channel().writeAndFlush("测试用例");
             
             //等待服务端监听端口关闭,会一直阻塞，等待服务端关闭后，才关闭,异步阻塞，等待服务端链路关闭后，才会退出
             channelFuture.channel().closeFuture().sync().addListener(new ChannelFutureListener() {

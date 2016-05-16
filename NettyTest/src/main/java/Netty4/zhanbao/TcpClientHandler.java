@@ -26,7 +26,7 @@ public class TcpClientHandler extends ChannelInboundHandlerAdapter {
     private byte[] req;
 
     public TcpClientHandler() {
-        req = ("QUERY TIME ORDER" + System.getProperty("line.separator")).getBytes();
+//                req = ("QUERY TIME ORDER" + System.getProperty("line.separator")).getBytes();
     }
 
     /* (non-Javadoc)   
@@ -36,13 +36,15 @@ public class TcpClientHandler extends ChannelInboundHandlerAdapter {
      */
     @Override
     public void channelActive(ChannelHandlerContext ctx) throws Exception {
-        // 循环发送100条消息
-        ByteBuf message = null;
-        for (int i = 0; i < 100; i++) {
-            message = Unpooled.buffer(req.length);
-            message.writeBytes(req);
-            ctx.writeAndFlush(message);
-        }
+        //        // 循环发送100条消息
+//                ByteBuf message = null;
+//                for (int i = 0; i < 100; i++) {
+//                    message = Unpooled.buffer(req.length);
+//                    message.writeBytes(req);
+//                    ctx.writeAndFlush(message);
+//                }
+
+        System.out.println("我已经激活了");
     }
 
     /* (non-Javadoc)   
@@ -68,6 +70,7 @@ public class TcpClientHandler extends ChannelInboundHandlerAdapter {
     @Override
     public void channelReadComplete(ChannelHandlerContext ctx) throws Exception {
         System.out.println("我已经读取完毕了");
+        ctx.channel().close();
     }
 
     @Override

@@ -99,6 +99,7 @@ public class NettyRemotingServer implements RemotingServer {
                 }
             });
 
+       
         ServerBootstrap childHandler = this.serverBootstrap
             .group(this.eventLoopGroupBoss, this.eventLoopGroupWorker)
             .channel(NioServerSocketChannel.class).option(ChannelOption.SO_BACKLOG, 1024)

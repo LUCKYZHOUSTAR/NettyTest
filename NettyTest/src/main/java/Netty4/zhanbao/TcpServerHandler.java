@@ -8,6 +8,7 @@
  */
 package Netty4.zhanbao;
 
+import javassist.expr.NewArray;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
 import io.netty.channel.ChannelHandlerContext;
@@ -47,6 +48,7 @@ public class TcpServerHandler extends ChannelInboundHandlerAdapter{
         ByteBuf buf=(ByteBuf) msg;
         byte[] req=new byte[buf.readableBytes()];
         buf.readBytes(req);
+        System.out.println(new String(req));
         String body=new String(req, "UTF-8").substring(0, req.length-System.getProperty("line.separator").length());
         
         System.out.println("The time Server receive order:"+body+"; the Counter is :"+ ++Counter);

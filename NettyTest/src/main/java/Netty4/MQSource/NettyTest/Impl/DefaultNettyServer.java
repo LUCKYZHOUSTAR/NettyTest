@@ -2,7 +2,6 @@ package Netty4.MQSource.NettyTest.Impl;
 
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
@@ -25,6 +24,7 @@ public class DefaultNettyServer {
     private NettyRequestProcessor processor;
 
     public void init() {
+
         BlockingQueue workQueue = new LinkedBlockingQueue(this.accepts);
         ExecutorService executor = new ThreadPoolExecutor(this.corePoolSize, this.maximumPoolSize,
             this.keepAliveTime, TimeUnit.MILLISECONDS, workQueue);
