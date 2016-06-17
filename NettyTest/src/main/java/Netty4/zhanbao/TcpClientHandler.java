@@ -70,7 +70,7 @@ public class TcpClientHandler extends ChannelInboundHandlerAdapter {
     @Override
     public void channelReadComplete(ChannelHandlerContext ctx) throws Exception {
         System.out.println("我已经读取完毕了");
-        ctx.channel().close();
+//        ctx.channel().close();
     }
 
     @Override
