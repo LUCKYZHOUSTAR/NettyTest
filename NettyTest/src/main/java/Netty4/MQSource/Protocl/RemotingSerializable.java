@@ -10,7 +10,7 @@ package Netty4.MQSource.Protocl;
 
 import java.nio.charset.Charset;
 
-import com.alibaba.fastjson.JSON;
+import com.lucky.fastjson.JSON;
 
 /**  
  * @ClassName: RemotingSerializable   

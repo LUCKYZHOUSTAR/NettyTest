@@ -1,2 +1,0 @@
-DEBUG [2016/04/14 14:09:42,168] nioEventLoopGroup-2-1 Recycler.debug(line:76): -Dio.netty.recycler.maxCapacity.maxCapacity: 262144
-DEBUG [2016/04/14 14:09:42,221] nioEventLoopGroup-2-1 AbstractByteBuf.debug(line:81): -Dio.netty.buffer.bytebuf.checkAccessible: true

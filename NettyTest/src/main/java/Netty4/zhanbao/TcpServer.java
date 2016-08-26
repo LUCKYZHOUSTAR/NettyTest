@@ -24,64 +24,59 @@ import io.netty.handler.codec.string.StringDecoder;
 import io.netty.handler.codec.string.StringEncoder;
 import io.netty.util.CharsetUtil;
 
-/**  
- * @ClassName: TcpServer   
- * @Description: 
- * @author: LUCKY  
- * @date:2016年4月12日 下午3:37:26     
+/**
+ * @ClassName: TcpServer
+ * @Description:
+ * @author: LUCKY
+ * @date:2016年4月12日 下午3:37:26
  */
 public class TcpServer {
 
-    private static final String IP            = "localhost";
-    private static final int    PORT          = 9999;
+	private static final String IP = "localhost";
+	private static final int PORT = 9999;
 
-    /*用于分配处理业务线程的线程组个数*/
+	/* 用于分配处理业务线程的线程组个数 */
 
-    protected static final int  BIZGROUPSIZE  = Runtime.getRuntime().availableProcessors() * 2;
+	protected static final int BIZGROUPSIZE = Runtime.getRuntime()
+			.availableProcessors() * 2;
 
-    /*业务出现线程大小*/
+	/* 业务出现线程大小 */
 
-    protected static final int  BIZTHREADSIZE = 4;
+	protected static final int BIZTHREADSIZE = 4;
 
-    /* 
-     * NioEventLoopGroup实际上就是个线程池, 
-     * NioEventLoopGroup在后台启动了n个NioEventLoop来处理Channel事件, 
-     * 每一个NioEventLoop负责处理m个Channel, 
-     * NioEventLoopGroup从NioEventLoop数组里挨个取出NioEventLoop来处理Channel 
-     */
+	/*
+	 * NioEventLoopGroup实际上就是个线程池,
+	 * NioEventLoopGroup在后台启动了n个NioEventLoop来处理Channel事件,
+	 * 每一个NioEventLoop负责处理m个Channel,
+	 * NioEventLoopGroup从NioEventLoop数组里挨个取出NioEventLoop来处理Channel
+	 */
 
-    protected static void connect() throws Exception {
-        ServerBootstrap b = new ServerBootstrap();
-        EventLoopGroup bossGroup = new NioEventLoopGroup(BIZGROUPSIZE);
-        EventLoopGroup workerGroup = new NioEventLoopGroup(BIZTHREADSIZE);
-        try {
-            b.group(bossGroup, workerGroup);
-            b.channel(NioServerSocketChannel.class).option(ChannelOption.TCP_NODELAY, true);
-            b.childHandler(new ChannelInitializer<Channel>() {
+	protected static void connect() throws Exception {
+		ServerBootstrap b = new ServerBootstrap();
+		EventLoopGroup bossGroup = new NioEventLoopGroup(BIZGROUPSIZE);
+		EventLoopGroup workerGroup = new NioEventLoopGroup(BIZTHREADSIZE);
+		try {
+			b.group(bossGroup, workerGroup);
+			b.channel(NioServerSocketChannel.class).option(
+					ChannelOption.TCP_NODELAY, true);
+			b.childHandler(new ChannelInitializer<Channel>() {
 
-                @Override
-                protected void initChannel(Channel ch) throws Exception {
-                    ChannelPipeline pipeline = ch.pipeline();
-                    pipeline.addLast(new TcpServerHandler());
-                }
+				@Override
+				protected void initChannel(Channel ch) throws Exception {
+					ChannelPipeline pipeline = ch.pipeline();
+					pipeline.addLast(new TcpServerHandler());
+				}
 
-            });
+			});
 
-            ChannelFuture channelFuture = b.bind(IP, PORT).sync();
-            //            Thread.sleep(Integer.MAX_VALUE);
+			ChannelFuture channelFuture = b.bind(IP, PORT).sync();
+			System.out.println("TCP服务器已经启动");
+		} catch (Exception e) {
+		}
+	}
 
-            //等待服务端端口关闭，服务端不需要加这句话，同步阻塞住了
-            channelFuture.channel().closeFuture().sync();
-            System.out.println("TCP服务器已经启动");
-        } catch (Exception e) {
-        } finally {
-            bossGroup.shutdownGracefully();
-            workerGroup.shutdownGracefully();
-        }
-    }
-
-    public static void main(String[] args) throws Exception {
-        connect();
-        System.out.println("服务端已经启动");
-    }
+	public static void main(String[] args) throws Exception {
+		connect();
+		System.out.println("服务端已经启动");
+	}
 }
